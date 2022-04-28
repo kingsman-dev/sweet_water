@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./App.css" />
+    <script src="./App.js" async defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head text-center border_bottom">
+        <h1>SWEET WATER</h1>
+        <p>Tel : 056 865 6002</p>
+        <p>Simplified Tax Invoice</p>
+      </div>
+      <div class="author border_bottom flex justify-between items-end">
+        <div class="">
+          <h4>Order # 0197</h4>
+          <p>Billed By : Rifat</p>
+        </div>
+        <div class="">
+          <p>Date : <span class="date"></span></p>
+          <p><span>1 Item</span> - <span> 1Qty</span></p>
+        </div>
+      </div>
+      <div class="details border_bottom flex justify-between items-start text-center">
+        <div class="text-left">
+          <h4>Description</h4>
+          <h5>Sweet Water</h5>
+        </div>
+        <div>
+          <h4>Qty</h4>
+          <h5><input type="number" name="" id="qty" value="1" /></h5>
+        </div>
+        <div>
+          <h4>Price</h4>
+          <h5><input type="number" name="" id="qty" value="75" /> <span>sr</span></h5>
+        </div>
+        <div>
+          <h4>Amount</h4>
+          <h5><input type="number" name="" id="qty" value="76.5" /></h5>
+        </div>
+      </div>
+      <div class="details border_bottom flex flex-col justify-between items-start">
+        <div class="flex justify-between items-center pt-10 w-full">
+          <h4>Sub Total</h4>
+          <h5><input type="number" name="" id="qty" value="0" readonly /><span>sr</span></h5>
+        </div>
+        <div class="flex justify-between items-center pt-10 w-full">
+          <h4>Discount</h4>
+          <h5><input type="number" name="" id="qty" value="0" readonly /><span>sr</span></h5>
+        </div>
+        <div class="flex justify-between items-center pt-10 w-full">
+          <h4>Sub Total (Excluding Tax)</h4>
+          <h5><input type="number" name="" id="qty" value="0" readonly /><span>sr</span></h5>
+        </div>
+        <div class="flex justify-between items-center pt-10 w-full">
+          <h4>Tax (15.00%)</h4>
+          <h5><input type="number" name="" id="qty" value="13.5" readonly /><span>sr</span></h5>
+        </div>
+        <div class="flex justify-between items-center pt-10 w-full">
+          <h2>Bill Total</h2>
+          <h5><input type="number" name="" id="qty" value="0" readonly /><span>sr</span></h5>
+        </div>
+      </div>
+      <div class="greetings flex justify-between items-center">
+        <div class="qrcode">
+          <img src="./qrcode.png" alt="" width="100px" />
+        </div>
+        <div>
+          <h2 class="greeting_text">HAVE A NICE DAY</h2>
+          <h4>Thank you</h4>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="print_invoice container text-center">
+        <h1>The Invoice is rady to print</h1>
+        <div class="w-full">
+          <button id="print">Print</button>
+          <p id="cancel">Cancel Print</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
