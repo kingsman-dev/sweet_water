@@ -59,9 +59,6 @@
       input:focus {
         outline-color: rgb(255, 85, 141);
       }
-      h1 {
-        font-size: 25px;
-      }
 
       .container {
         max-width: var(--container-max-width);
@@ -210,17 +207,25 @@
         padding-top: 30px;
       }
 
-      h4 {
-        font-size: 12px;
-      }
-      h2 {
-        font-size: 15px;
-      }
-      h3 {
-        font-size: 14px;
-      }
-      p {
-        font-size: 11px;
+      @media print {
+        h1 {
+          font-size: 25px;
+        }
+        h4 {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 11px;
+        }
+        .greetings {
+          gap: 20px;
+        }
       }
     </style>
   </head>
